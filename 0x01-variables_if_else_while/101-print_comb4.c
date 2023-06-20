@@ -11,7 +11,7 @@ for (n = 48; n < 58; n++)
 {
 for (m = 49; m < 58; m++)
 {
-if (l > m && m > n)
+if (int l > m && m > n)
 putchar(n);
 putchar(m);
 putchar(l);
