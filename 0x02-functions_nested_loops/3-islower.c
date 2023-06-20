@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* int _islower - Shows 1 if the input is lower case else shows 0.
+* _islower - Shows 1 if the input is lower case else shows 0.
 *
 * returns: 0 or 1
 */
