@@ -1,23 +1,30 @@
 #include <stdio.h>
+
 /**
-*main - Prints dif combos of two numbers
-*
-*Return: Always 0.
-*/
+ * main - Prints different combinations of two numbers
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
 int n, m;
+
 for (n = 48; n <= 56; n++)
 {
-for (m = 49; m <= 57; m++)
+for (m = n + 1; m <= 57; m++)
 {
-if (m > n)
+putchar(n);
+putchar(' ');
+putchar(m);
+
+if (n != 56 || m != 57)
 {
 putchar(',');
 putchar(' ');
 }
 }
 }
+
 putchar('\n');
-return (0);
+return 0;
 }
