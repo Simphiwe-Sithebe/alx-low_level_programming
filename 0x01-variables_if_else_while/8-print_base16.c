@@ -16,5 +16,5 @@ for (i = 97; i < 103; i++)
 putchar(i);
 }
 putchar(i);
-rerturn (0);
+return (0);
 }
