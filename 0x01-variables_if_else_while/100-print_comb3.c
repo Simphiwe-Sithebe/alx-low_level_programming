@@ -14,7 +14,7 @@ for (n = 48; n <= 56; n++)
 for (m = n + 1; m <= 57; m++)
 {
 putchar(n);
-putchar(' ');
+
 putchar(m);
 
 if (n != 56 || m != 57)
@@ -24,6 +24,6 @@ putchar(' ');
 }
 }
 }
-
+putchar('\n');
 return 0;
 }
