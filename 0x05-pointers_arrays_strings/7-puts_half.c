@@ -1,8 +1,9 @@
 #include "main.h"
 /**
 * puts_half - Prints half of a string
+* if odd len, n = (length_of_the_string - 1) / 2
 * @str: input
-Return: Characters created by half of the string
+* Return: Characters created by half of the string
 */
 void puts_half(char *str)
 {
