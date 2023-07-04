@@ -1,19 +1,25 @@
 #include "main.h"
 /**
- * _memcpy - function that copies memory area
- *@dest: the address of memory to print
- *@src: second value
- *@n: thirth value
+ * _strchr - function that locates a character in a string
+ *@s: first value -char
+ *@c: second value - char
  *
- * Return: char with result of memset
+ * Return: char with result
  */
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char *s, char c)
 {
-	unsigned int i;
 
-	for (i = 0; i < n; i++)
+	if (*s == '\0')
+		return (s);
+	while (*s)
 	{
-		dest[i] = src[i];
+		if (*s == c)
+		{
+			return (s);
+		}
+	       s++;
 	}
-	return (dest);
+	if (c == '\0')
+		return (s);
+	return ('\0');
 }
